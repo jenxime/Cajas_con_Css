@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/clase16_Lunes12/registroStyle.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/dd1206c98a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="contenedorA">20% de descuento en todos los productos!</div>
+      <div class="contenderB">
+        <img src="/clase16_Lunes12/images/logo 1.svg" />
+        <span>Nombre Tienda</span>
+      </div>
+      <div class="contenderC">
+        <ul>
+          <li>Contacto</li>
+          <li>Registrarne</li>
+          <li>Ingresar</li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section>
+        <article class="contenedorForm">
+          <h1>Añadi tu super!</h1>
+          <h3>Agrega tu personaje favorito completando las opciones</h3>
+
+          <form action="enviarForm" method="POST">
+            <div class="row">
+              <div class="column">
+                <div class="text-field">
+                  <label for="nombre">Nombre:</label>
+                  <input
+                    class="input"
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    required
+                  />
+                </div>
+                <div class="text-field">
+                  <label for="fecha">Fecha:</label>
+                  <input
+                    class="input"
+                    type="date"
+                    id="fecha"
+                    name="fecha"
+                    required
+                  /><br /><br />
+                </div>
+                <div class="text-field">
+                  <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="15"
+                    cols="30"
+                    placeholder="Descripcion"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <div class="column">
+                <div class="text-field">
+                  <label for="opciones">*Especie:</label>
+                  <select id="opciones" name="opciones" class="input">
+                    <option value="" disabled selected hidden>
+                      Selecciona una opción
+                    </option>
+                    <option value="opcion1">Especie 1</option>
+                    <option value="opcion2">Especie 2</option>
+                    <option value="opcion3">Especie 3</option>
+                  </select>
+                </div>
+                <div class="text-field">
+                  <label for="archivo">Agregar Foto:</label>
+                  <input
+                    class="inputFile"
+                    type="file"
+                    id="archivo"
+                    name="archivo"
+                  />
+                </div>
+
+                <div class="poderesCheck">
+                  <label for="check">Poderes:</label>
+                  <br />
+                  <div class="campo-checkbox">
+                    <input type="checkbox" id="check" name="check" />
+                    <label for="check">Volar</label>
+                  </div>
+                  <div class="campo-checkbox">
+                    <input type="checkbox" id="check" name="check" />
+                    <label for="check">SuperInteligencia</label>
+                  </div>
+                  <div class="campo-checkbox">
+                    <input type="checkbox" id="check" name="check" />
+                    <label for="check">Vista de rayo làser</label>
+                  </div>
+                  <div class="campo-checkbox">
+                    <input type="checkbox" id="check" name="check" />
+                    <label for="check">Billetera gorda</label>
+                  </div>
+                </div>
+                <hr />
+                <label for="radio">Tipo de personaje</label>
+
+                <div class="campo-radio">
+                  <input type="radio" id="radio1" name="radio" value="radio1" />
+                  <label for="radio1">Hèroe / Hèroina </label>
+                </div>
+                <div class="campo-radio">
+                  <input type="radio" id="radio2" name="radio" value="radio2" />
+                  <label for="radio2">Villano / Villana</label>
+                </div>
+              </div>
+            </div>
+            <div class="buttonC">
+              <input class="buttonS" type="submit" value="Añadir" />
+            </div>
+          </form>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">Todos los derechos reservados a FRONT END 1</div>
+    </footer>
+  </body>
+</html>
